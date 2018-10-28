@@ -18,18 +18,20 @@
 
 
 	<link rel="stylesheet" href="font-awesome/css/all.css">
+	
+	<link rel="stylesheet" href="css/emojionearea.min.css">
+	<link rel="stylesheet" href="css/mentionsInput.css">
+	<script src="js/emojionearea.min.js"></script>
+
 	<link rel="stylesheet" href="css/chatbox.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
-
-
 	<!-- Emoji Data -->
-    <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
-    <script type="text/javascript" src="js/jquery.emojis.js"></script>
 
+
+	<script src="js/jquery.caret.min.js" ></script>
+	<script src="js/jquery.atwho.min.js"></script>
     <!-- SOCKET IO -->
-    <script src="js/socket.io.js" />
-    <script src="js/chatSocket.js" />
+    <script src="js/socket.io.js" ></script>
+    <script src="js/chatSocket.js" ></script>
 
 
 	<script src="js/xeraph_script.js"></script>
@@ -282,7 +284,7 @@
 				<div class="col-lg-12">
 					<div class="chat_window">
 						<div class="row">
-							<div class="col-md-1 col2 groups">
+								<div class="col2 groups">
 								<div class="user-top"><span>Rooms</span></div>
 								<ul class="group-list">
 									<li class="user-obj activeGroup">
@@ -297,116 +299,28 @@
 											<img src="img/store-icon_overwatch.png" alt="" class="avatar">
 											<!-- <span class="user-name">Over Watch</span> -->
 										</li>
-							</ul>
+								</ul>
 							</div>
-							<div class="col-md-11 col1">
+							<div class="col-md-12 col1">
 								<div class="row">
-							<div class="col-md-12 col">
+							<div class="col-md-12 msg-col">
 								<div class="top_menu">
 									<div class="static-message">#General</div>
 								</div>
 							</div>
-							<span class="collapes" id="collapse">&#187;</span>
-							<div class="col-md-10 col msgCollapse">
-								<ul class="messages">
-								<li class="message left appeared">
-										<img src="img/avatar6.jpg" alt="" class="avatar" data-toggle="popover" data-container="body" data-placement="right" data-trigger="hover" data-html="true"  id="avatar6">
-										<div class="hide" id="popover-content-avatar6">
-											<div class="card">
-											    <div class="box">
-											        <div class="img">
-											            <img src="img/avatar6.jpg">
-											        </div>
-											        <h2>Sara<br><span>Overwatch Player</span></h2>
-											        <div class="table-responsive">
-													  <table class="table">
-													  	<tr><td>Content Count</td><td>0</td></tr>
-													  	<tr><td>Joined</td><td>OCT-2018</td></tr>
-													  	<tr><td>Last Visit</td><td>Today</td></tr>
-													  	<tr><td>Email</td><td>xyr@gmail.com</td></tr>
-													  	<tr><td>Warnig</td><td>0</td></tr>
-													  </table>
-													</div>
-											    </div>
-											</div>
-									</div>
-									<div class="message-body">
-										<div class="name-time"><span class="msg-name">Sara</span>&nbsp;
-												<span class="msg-time">Monday 12:00 PM</span>
-											</div>
-										<div class="text_wrapper">
-											<div class="text">Hello Philip! :)</div>
-										</div>
-									</div>
-								</li>
-								<li class="message left appeared">
-										<img src="img/avatar3.jpg" alt="" class="avatar" data-toggle="popover" data-container="body" data-placement="right" data-trigger="hover" data-html="true"  id="avatar3">
-										<div class="hide" id="popover-content-avatar3">
-											<div class="card">
-											    <div class="box">
-											        <div class="img">
-											            <img src="img/avatar3.jpg">
-											        </div>
-											        <h2>Sara<br><span>Overwatch Player</span></h2>
-											        <div class="table-responsive">
-													  <table class="table">
-													  	<tr><td>Content Count</td><td>0</td></tr>
-													  	<tr><td>Joined</td><td>OCT-2018</td></tr>
-													  	<tr><td>Last Visit</td><td>Today</td></tr>
-													  	<tr><td>Email</td><td>xyr@gmail.com</td></tr>
-													  	<tr><td>Warnig</td><td>0</td></tr>
-													  </table>
-													</div>
-											    </div>
-											</div>
-									</div>
-									<div class="message-body">
-										<div class="name-time"><span class="msg-name">Sara</span>&nbsp;
-												<span class="msg-time">Monday 12:00 PM</span>
-											</div>
-										<div class="text_wrapper">
-											<div class="text">Hello Philip! :)</div>
-										</div>
-									</div>
-								</li>
-								<li class="message left appeared">
-										<img src="img/avatar5.jpg" alt="" class="avatar" data-toggle="popover" data-container="body" data-placement="right" data-trigger="hover" data-html="true"  id="avatar5">
-										<div class="proCard hide" id="popover-content-avatar5">
-											<div class="card">
-											    <div class="box">
-											        <div class="img">
-											            <img src="img/avatar5.jpg">
-											        </div>
-											        <h2>Sara<br><span>Overwatch Player</span></h2>
-											        <div class="table-responsive">
-													  <table class="table">
-													  	<tr><td>Content Count</td><td>0</td></tr>
-													  	<tr><td>Joined</td><td>OCT-2018</td></tr>
-													  	<tr><td>Last Visit</td><td>Today</td></tr>
-													  	<tr><td>Email</td><td>xyr@gmail.com</td></tr>
-													  	<tr><td>Warnig</td><td>0</td></tr>
-													  </table>
-													</div>
-											    </div>
-											</div>
-									</div>
-									<div class="message-body">
-										<div class="name-time"><span class="msg-name">Sara</span>&nbsp;
-												<span class="msg-time">Monday 12:00 PM</span>
-											</div>
-										<div class="text_wrapper">
-											<div class="text">Hello Philip! :)</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+							<span class="collapes" id="collapse"><img src="img/next.png" alt="" width="12" height="12"></span>
+							<div class="col-md-10 col-sm-9 col-xs-10 msg-col msgCollapse">
+								<ul class="messages"></ul>
 							<div class="bottom_wrapper clearfix">
 									<div class="message_input_wrapper">
-										<input class="message_input" id="input-default" placeholder="Chat in general..." />
+										<div class="message_input-container">
+										<div class="message_input" id="input-default" contenteditable="true" data-text="Chat in general..."></div>
+										</div>
+										<input type="hidden" id="emoji">
 									</div>
 								</div>
 							</div>
-							<div class="col-md-2 col2 right-side">
+							<div class="col-md-2 col-sm-2 col-xs-2 col2 right-side">
 								<div class="user-top">
 									<span>Online User</span>
 								</div>
@@ -433,7 +347,9 @@
 					<div class="deco-border-bottom"></div>
 					<div class="message_template">
 						<li class="message left">
-										<img src="img/avatar6.jpg" alt="" class="avatar" data-toggle="popover" data-container="body" data-placement="right" data-trigger="hover" data-html="true" >
+										<div class="messages-avatar">
+											<img src="img/avatar6.jpg" alt="" class="avatar" data-toggle="popover" data-container="body" data-placement="right" data-trigger="hover" data-html="true" id="check" >
+										</div>
 										<div class="proCard hide">
 											<div class="card">
 											    <div class="box">
@@ -442,7 +358,7 @@
 											        </div>
 											        <h2>Sara<br><span>Overwatch Player</span></h2>
 											        <div class="table-responsive">
-													  <table class="table">
+													  <table>
 													  	<tr><td>Content Count</td><td>0</td></tr>
 													  	<tr><td>Joined</td><td>OCT-2018</td></tr>
 													  	<tr><td>Last Visit</td><td>Today</td></tr>
@@ -458,7 +374,7 @@
 												<span class="msg-time">Monday 12:00 PM</span>
 											</div>
 										<div class="text_wrapper">
-											<div class="text">Hello Philip! :)</div>
+											<div class="text"></div>
 										</div>
 									</div>
 								</li>
